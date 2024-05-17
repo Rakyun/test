@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="p-4">
+    <div
+      class="flex border-4 border-black items-center p-5 flex-col bg-blue-700 w-[400px] mb-10"
+    >
+      <p class="text-center text-white text-4xl mb-10">To-Do List</p>
+      <div class="flex">
+        <button
+          onclick="addItem()"
+          class="bg-black text-white p-4 px-5 mb-5 mr-4"
+        >
+          Add
+        </button>
+        <button
+          onclick="deleteItem()"
+          class="bg-black text-white p-4 px-5 mb-5"
+        >
+          Remove
+        </button>
+      </div>
+
+      <div class="flex">
+        <button
+          onclick="filterWords()"
+          class="bg-black text-white p-4 px-5 mb-5 mr-4"
+        >
+          Filter
+        </button>
+        <button
+          onclick="sortAsc()"
+          class="bg-black text-white p-4 px-5 mb-5 mr-4"
+        >
+          Sort Ascending
+        </button>
+        <button 
+          onclick="sortDesc()" 
+          class="bg-black text-white p-4 px-5 mb-5"
+          >
+          Sort Descending
+        </button>
+      </div>
+    </div>
+    <div id="box"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
